@@ -1,2 +1,0 @@
-# Certifa Website
-Coming soon 🚀
