@@ -11,7 +11,7 @@ const AboutSection = () => {
       <div className="max-w-6xl mx-auto px-4">
         {/* Who Are We */}
         <div className="mb-12">
-          <h2 className="text-3xl font-bold text-blue-900 mb-4">Who Are We</h2>
+          <h2 className="text-3xl font-bold text-blue-900 mb-4">Certifa is just not another institute..</h2>
           <p className="text-gray-700 leading-relaxed">
             Certifa is a premier learning platform dedicated to empowering students with the right skills and certifications that truly matter in the industry. Unlike traditional institutes that focus solely on knowledge, we provide hands-on training designed to help students understand real-world industry requirements and successfully crack prestigious certifications.
           </p>
@@ -19,7 +19,7 @@ const AboutSection = () => {
 
         {/* Vision & Mission */}
         <div className="mb-12">
-          <h2 className="text-3xl font-bold text-blue-900 mb-4">Vision & Mission</h2>
+          //<h2 className="text-3xl font-bold text-blue-900 mb-4">Vision & Mission</h2>
           <h3 className="text-xl font-semibold text-yellow-600 mb-2">Vision</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
             To be India’s leading platform for certification-driven career growth, enabling students to gain not just skills but recognized industry credentials.
@@ -32,7 +32,7 @@ const AboutSection = () => {
 
         {/* Why Choose Us */}
         <div>
-          <h2 className="text-3xl font-bold text-blue-900 mb-8">Why Choose Us</h2>
+          <h2 className="text-3xl font-bold text-blue-900 mb-8">Why Choose Certifa?</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Card 1 */}
             <div className="p-6 border rounded-lg shadow hover:shadow-lg transition duration-300">
