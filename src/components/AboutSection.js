@@ -18,8 +18,8 @@ const AboutSection = () => {
         </div>
 
         {/* Vision & Mission */}
-       // <div className="mb-12">
-          //<h2 className="text-3xl font-bold text-blue-900 mb-4">Vision & Mission</h2>
+       <div className="mb-12">
+          {/*<h2 className="text-3xl font-bold text-blue-900 mb-4">Vision & Mission</h2>*/}
           <h3 className="text-xl font-semibold text-yellow-600 mb-2">Vision</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
             To be India’s leading platform for certification-driven career growth, enabling students to gain not just skills but recognized industry credentials.
