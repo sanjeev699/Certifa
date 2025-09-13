@@ -1,14 +1,16 @@
 import React from "react";
-import Navbar from "./components/Navbar";
+
 import HeroSection from "./components/HeroSection";
+import AboutSection from "./components/AboutSection";
 import CoursesSection from "./components/CoursesSection";
 import ContactSection from "./components/ContactSection";
 
 const HomePage = () => {
   return (
     <div>
-      <Navbar />
+     
       <HeroSection />
+       <AboutSection />
       <CoursesSection />
       <ContactSection />
     </div>

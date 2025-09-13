@@ -2,7 +2,13 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <section id="hero" className="bg-yellow-400 text-blue-900 py-24 px-6 pt-32 text-center">
+    <section
+      id="hero"
+      className="text-blue-900 py-24 px-6 pt-32 text-center"
+      style={{
+        background: "linear-gradient(to right, #1E40AF 0%, #FFD700 10%, #FFD700 90%, #1E40AF 100%)",
+      }}
+    >
       <h1 className="text-4xl font-bold mb-4">
         Right Certifications. Strong Credentials. Great Career.
       </h1>
@@ -20,4 +26,3 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
-    
