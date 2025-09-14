@@ -65,10 +65,10 @@ const CoursesSection = () => {
 
       {/* Curriculum (with icons) */}
 
+{/* Curriculum (with icons) */}
 <h3 className="text-2xl font-bold mb-6 text-center">Curriculum Overview</h3>
-<div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-16 place-items-center">
+<div className="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
   {[
-
     { title: "Excel for Analytics", img: "/excel.png" },
     { title: "Python for Data Analytics", img: "/python.png" },
     { title: "SQL for Data Management", img: "/database.png" },
@@ -76,17 +76,18 @@ const CoursesSection = () => {
   ].map((item, idx) => (
     <div
       key={idx}
-      className="bg-brandBlue rounded-2xl shadow p-6 flex flex-col items-center text-center text-brandYellow"
+      className="bg-brandBlue rounded-2xl shadow p-6 flex flex-col items-center text-center text-brandYellow h-full"
     >
       <img
         src={item.img}
         alt={item.title}
         className="w-16 h-16 mb-4 object-contain"
       />
-      <h4 className="font-semibold">{item.title}</h4>
+      <h4 className="font-bold text-lg">{item.title}</h4>
     </div>
   ))}
 </div>
+
 
 
       {/* Why Certifa */}
