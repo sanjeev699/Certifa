@@ -83,7 +83,7 @@ const CoursesSection = () => {
         alt={item.title}
         className="w-16 h-16 mb-4 object-contain"
       />
-      <h4 className="font-bold text-lg">{item.title}</h4>
+      <h3 className="font-bold text-lg">{item.title}</h3>
     </div>
   ))}
 </div>
@@ -92,10 +92,10 @@ const CoursesSection = () => {
 
       {/* Why Certifa */}
       <section className="py-12 px-6 bg-brandYellow/10 mb-16 rounded-xl">
-        <h2 className="text-3xl font-bold text-center text-brandBlue mb-10">
+        <h3 className="text-3xl font-bold text-center text-brandBlue mb-10">
           Why Do the Data Analytics Program with{" "}
           <span className="text-brandBlue">Certifa</span>?
-        </h2>
+        </h3>
 
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           <div className="bg-white rounded-2xl shadow p-6 flex flex-col items-center text-center hover:shadow-lg transition">
