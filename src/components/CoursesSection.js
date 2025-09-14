@@ -1,5 +1,5 @@
 import React from "react";
-import { CheckCircle } from "lucide-react"; // for clean icons
+import { CheckCircle, GraduationCap, Briefcase, BarChart3, Award } from "lucide-react"; // all icons
 
 const CoursesSection = () => {
   const handleSubmit = async (e) => {
@@ -10,42 +10,32 @@ const CoursesSection = () => {
     const contact = e.target.contact.value.trim();
     const program = e.target.program.value.trim();
 
-    // Validation
     if (!name || !email || !contact || !program) {
       alert("Please fill in all the fields before submitting.");
       return;
     }
 
-    // 1. Open WhatsApp immediately
+    // WhatsApp
     const phone = "916366072794";
     const message = `Hello Certifa, I want to enroll.\nName: ${name}\nEmail: ${email}\nContact: ${contact}\nProgram: ${program}`;
     const encodedMessage = encodeURIComponent(message);
     window.open(`https://wa.me/${phone}?text=${encodedMessage}`, "_blank");
 
-    // 2. Save to Google Sheet
+    // Google Sheets
     try {
       fetch(
         "https://script.google.com/macros/s/AKfycbzsoAWDPjCOo2GmFFIZU7xZg5C90T6ROAMTeL99ZfS0TtsNUYTJN-VtauBD6FiUwAkrlw/exec",
         {
           method: "POST",
           mode: "no-cors",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            type: "enrollment",
-            name,
-            email,
-            contact,
-            program,
-          }),
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ type: "enrollment", name, email, contact, program }),
         }
       );
     } catch (err) {
       console.error("Error saving to Google Sheet:", err);
     }
 
-    // 3. Reset form
     e.target.reset();
   };
 
@@ -73,7 +63,7 @@ const CoursesSection = () => {
         <div className="absolute inset-0 bg-brandBlue bg-opacity-20 rounded-2xl"></div>
       </div>
 
-      {/* Curriculum */}
+      {/* Curriculum (with icons) */}
       <h3 className="text-2xl font-bold mb-6 text-center">Curriculum Overview</h3>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-16">
         {[
@@ -88,7 +78,7 @@ const CoursesSection = () => {
           >
             <img
               src={item.img}
-              alt={`${item.title} course in Bootcamp`}
+              alt={item.title}
               className="w-16 h-16 mb-4 object-contain"
             />
             <h4 className="font-semibold text-brandBlue">{item.title}</h4>
@@ -96,58 +86,72 @@ const CoursesSection = () => {
         ))}
       </div>
 
-      {/* Timeline */}
-      <h3 className="text-2xl font-bold mb-6 text-center">Your 4-Month Journey</h3>
-      <div className="flex justify-between items-center max-w-4xl mx-auto mb-16 relative">
-        <div className="absolute top-1/2 left-0 right-0 h-2 bg-brandBlue rounded-full -z-10"></div>
-        {["Excel", "Python", "SQL", "Power BI & Certification"].map((step, i) => (
-          <div key={i} className="flex flex-col items-center w-1/4 text-center">
-            <div className="bg-brandBlue text-white rounded-full w-16 h-16 flex items-center justify-center font-bold mb-2">
-              {i + 1}
-            </div>
-            <p className="font-medium">{step}</p>
+      {/* Why Certifa */}
+      <section className="py-12 px-6 bg-brandYellow/10 mb-16 rounded-xl">
+        <h2 className="text-3xl font-bold text-center text-brandBlue mb-10">
+          Why Do the Data Analytics Program with{" "}
+          <span className="text-brandYellow">Certifa</span>?
+        </h2>
+
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="bg-white rounded-2xl shadow p-6 flex flex-col items-center text-center hover:shadow-lg transition">
+            <GraduationCap className="h-10 w-10 text-brandBlue mb-3" />
+            <h3 className="font-bold text-lg text-brandBlue mb-2">Industry-Aligned</h3>
+            <p className="text-gray-600 text-sm">
+              Hands-on skills in Excel, Python, SQL & Power BI.
+            </p>
           </div>
-        ))}
+
+          <div className="bg-white rounded-2xl shadow p-6 flex flex-col items-center text-center hover:shadow-lg transition">
+            <Award className="h-10 w-10 text-brandBlue mb-3" />
+            <h3 className="font-bold text-lg text-brandBlue mb-2">Certification Edge</h3>
+            <p className="text-gray-600 text-sm">
+              Direct prep for Microsoft PL-300, globally recognized.
+            </p>
+          </div>
+
+          <div className="bg-white rounded-2xl shadow p-6 flex flex-col items-center text-center hover:shadow-lg transition">
+            <Briefcase className="h-10 w-10 text-brandBlue mb-3" />
+            <h3 className="font-bold text-lg text-brandBlue mb-2">4x Job Advantage</h3>
+            <p className="text-gray-600 text-sm">
+              Certified analysts land roles at top firms faster.
+            </p>
+          </div>
+
+          <div className="bg-white rounded-2xl shadow p-6 flex flex-col items-center text-center hover:shadow-lg transition">
+            <BarChart3 className="h-10 w-10 text-brandBlue mb-3" />
+            <h3 className="font-bold text-lg text-brandBlue mb-2">Higher Salaries</h3>
+            <p className="text-gray-600 text-sm">
+              PL-300 certified pros earn 30–50% more than non-certified.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Career Boost Bonuses */}
+      <div className="max-w-5xl mx-auto mb-12">
+        <h3 className="text-2xl font-bold text-blue-800 mb-4">Career Boost Bonuses</h3>
+        <div className="grid md:grid-cols-2 gap-6">
+          <div className="bg-white border rounded-lg p-4 shadow">
+            <p className="font-semibold text-gray-800 mb-2">💡 Before the Exam</p>
+            <ul className="list-disc list-inside text-gray-700 space-y-1">
+              <li>100% Exam Fee Covered (PL-300, first attempt)</li>
+              <li>Mock Tests & Doubt-Clearing Sessions</li>
+              <li>Real Business Projects for Portfolio</li>
+            </ul>
+          </div>
+          <div className="bg-white border rounded-lg p-4 shadow">
+            <p className="font-semibold text-gray-800 mb-2">🌟 After You Pass</p>
+            <ul className="list-disc list-inside text-gray-700 space-y-1">
+              <li>Naukri.com 3-month Premium Access</li>
+              <li>Resume & LinkedIn Profile Makeover</li>
+              <li>Mock Interviews with Industry Experts</li>
+            </ul>
+          </div>
+        </div>
       </div>
 
-      {/* Bonuses */}
-      <h3 className="text-2xl font-bold mb-6 text-center">Career Boost Bonuses</h3>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-        <div className="bg-white rounded-xl shadow-md p-6">
-          <h4 className="text-xl font-semibold mb-4 text-brandBlue">Before Exam</h4>
-          <ul className="space-y-3">
-            {[
-              "Microsoft PL-300 exam fee (first attempt)",
-              "Mock Tests & Doubt Sessions",
-              "End-to-end Real Business Projects",
-            ].map((bonus, idx) => (
-              <li key={idx} className="flex items-start">
-                <CheckCircle className="w-5 h-5 text-brandBlue mr-2 mt-1" />
-                <span>{bonus}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div className="bg-brandBlue text-white rounded-xl shadow-md p-6">
-          <h4 className="text-xl font-semibold mb-4">After You Pass</h4>
-          <ul className="space-y-3">
-            {[
-              "Naukri.com 3 months premium subscription",
-              "Resume Building Session",
-              "LinkedIn Profile Enhancement",
-              "Mock Interviews with Industry Experts",
-            ].map((bonus, idx) => (
-              <li key={idx} className="flex items-start">
-                <CheckCircle className="w-5 h-5 text-brandYellow mr-2 mt-1" />
-                <span>{bonus}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
-
-      {/* Enrollment Form with WhatsApp + Google Sheet */}
+      {/* Enrollment Form */}
       <div className="text-center mt-8 max-w-lg mx-auto">
         <h3 className="text-2xl font-bold text-brandBlue mb-4">Enroll Now</h3>
         <form onSubmit={handleSubmit} className="space-y-4 text-left">
