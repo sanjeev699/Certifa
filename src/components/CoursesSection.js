@@ -70,13 +70,13 @@ const CoursesSection = () => {
   {[
 
     { title: "Excel for Analytics", img: "/excel.png" },
-    { title: "Python for Analytics", img: "/python.png" },
-    { title: "SQL for Data", img: "/database.png" },
+    { title: "Python for Data Analytics", img: "/python.png" },
+    { title: "SQL for Data Management", img: "/database.png" },
     { title: "Power BI + PL-300", img: "/powerbi.png" },
   ].map((item, idx) => (
     <div
       key={idx}
-      className="bg-brandBlue rounded-xl shadow-md p-4 flex flex-col items-center text-center text-brandYellow"
+      className="bg-brandBlue rounded-2xl shadow p-6 flex flex-col items-center text-center text-brandYellow"
     >
       <img
         src={item.img}
@@ -93,7 +93,7 @@ const CoursesSection = () => {
       <section className="py-12 px-6 bg-brandYellow/10 mb-16 rounded-xl">
         <h2 className="text-3xl font-bold text-center text-brandBlue mb-10">
           Why Do the Data Analytics Program with{" "}
-          <span className="text-brandYellow">Certifa</span>?
+          <span className="text-brandBlue">Certifa</span>?
         </h2>
 
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -138,7 +138,7 @@ const CoursesSection = () => {
           <div className="bg-white border rounded-lg p-4 shadow">
             <p className="font-semibold text-gray-800 mb-2">💡 Before the Exam</p>
             <ul className="list-disc list-inside text-gray-700 space-y-1">
-              <li>100% Exam Fee Covered (PL-300, first attempt)</li>
+              <li>100% Microsoft Power BI PL-300 Certification Exam Fee Covered</li>
               <li>Mock Tests & Doubt-Clearing Sessions</li>
               <li>Real Business Projects for Portfolio</li>
             </ul>
