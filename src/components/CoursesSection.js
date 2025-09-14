@@ -79,7 +79,7 @@ const CoursesSection = () => {
         {[
           { title: "Excel for Analytics", img: "/excel.png" },
           { title: "Python for Analytics", img: "/python.png" },
-          { title: "SQL for Data", img: "/sql.png" },
+          { title: "SQL for Data", img: "/database.png" },
           { title: "Power BI + PL-300", img: "/powerbi.png" },
         ].map((item, idx) => (
           <div
