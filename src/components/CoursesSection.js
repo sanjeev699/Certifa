@@ -76,7 +76,7 @@ const CoursesSection = () => {
   ].map((item, idx) => (
     <div
       key={idx}
-      className="bg-brandBlue rounded-2xl shadow p-6 flex flex-col items-center text-center text-brandYellow h-full"
+      className="bg-brandBlue rounded-2xl shadow p-6 flex flex-col items-center text-center text-brandYellow"
     >
       <img
         src={item.img}
