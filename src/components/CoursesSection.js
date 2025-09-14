@@ -63,28 +63,29 @@ const CoursesSection = () => {
         <div className="absolute inset-0 bg-brandBlue bg-opacity-20 rounded-2xl"></div>
       </div>
 
-      {/* Curriculum (with icons) */}
-      <h3 className="text-2xl font-bold mb-6 text-center">Curriculum Overview</h3>
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-16">
-        {[
-          { title: "Excel for Analytics", img: "/excel.png" },
-          { title: "Python for Analytics", img: "/python.png" },
-          { title: "SQL for Data", img: "/database.png" },
-          { title: "Power BI + PL-300", img: "/powerbi.png" },
-        ].map((item, idx) => (
-          <div
-            key={idx}
-            className="bg-white rounded-xl shadow-md p-4 flex flex-col items-center text-center"
-          >
-            <img
-              src={item.img}
-              alt={item.title}
-              className="w-16 h-16 mb-4 object-contain"
-            />
-            <h4 className="font-semibold text-brandBlue">{item.title}</h4>
-          </div>
-        ))}
-      </div>
+      {/* Curriculum (with icons, transparent style) */}
+<h3 className="text-2xl font-bold mb-6 text-center">Curriculum Overview</h3>
+<div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-16">
+  {[
+    { title: "Excel for Analytics", img: "/excel.png" },
+    { title: "Python for Analytics", img: "/python.png" },
+    { title: "SQL for Data", img: "/database.png" },
+    { title: "Power BI + PL-300", img: "/powerbi.png" },
+  ].map((item, idx) => (
+    <div
+      key={idx}
+      className="flex flex-col items-center text-center p-4 hover:scale-105 transition"
+    >
+      <img
+        src={item.img}
+        alt={item.title}
+        className="w-16 h-16 mb-4 object-contain"
+      />
+      <h4 className="font-semibold text-brandBlue">{item.title}</h4>
+    </div>
+  ))}
+</div>
+
 
       {/* Why Certifa */}
       <section className="py-12 px-6 bg-brandYellow/10 mb-16 rounded-xl">
