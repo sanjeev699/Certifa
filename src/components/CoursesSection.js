@@ -77,10 +77,10 @@ const CoursesSection = () => {
       <h3 className="text-2xl font-bold mb-6 text-center">Curriculum Overview</h3>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-16">
         {[
-          { title: "Excel for Analytics", img: "/excel.jpg" },
-          { title: "Python for Analytics", img: "/python.jpg" },
-          { title: "SQL for Data", img: "/sql.jpg" },
-          { title: "Power BI + PL-300", img: "/powerbi.jpg" },
+          { title: "Excel for Analytics", img: "/excel.png" },
+          { title: "Python for Analytics", img: "/python.png" },
+          { title: "SQL for Data", img: "/sql.png" },
+          { title: "Power BI + PL-300", img: "/powerbi.png" },
         ].map((item, idx) => (
           <div
             key={idx}
