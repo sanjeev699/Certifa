@@ -64,9 +64,11 @@ const CoursesSection = () => {
       </div>
 
       {/* Curriculum (with icons) */}
+
 <h3 className="text-2xl font-bold mb-6 text-center">Curriculum Overview</h3>
-<div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-16">
+<div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-16 place-items-center">
   {[
+
     { title: "Excel for Analytics", img: "/excel.png" },
     { title: "Python for Analytics", img: "/python.png" },
     { title: "SQL for Data", img: "/database.png" },
