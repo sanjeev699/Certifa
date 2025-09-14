@@ -6,8 +6,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        certifaBlue: "#1E3A8A",
-        certifaYellow: "#FACC15"
+        brandBlue: "#003566",
+        brandYellow: "#FFD60A",
       }
     },
   },
