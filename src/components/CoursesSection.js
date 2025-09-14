@@ -92,8 +92,8 @@ const CoursesSection = () => {
 
       {/* Why Certifa */}
       <section className="py-12 px-6 bg-brandYellow/10 mb-16 rounded-xl">
-        <h3 className="text-3xl font-bold text-center text-brandBlue mb-10">
-          Why Do the Data Analytics Program with{" "}
+        <h3 className="text-2xl font-bold text-center text-brandBlue mb-10">
+          Why do the Data Analytics Program with{" "}
           <span className="text-brandBlue">Certifa</span>?
         </h3>
 
