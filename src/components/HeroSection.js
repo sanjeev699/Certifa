@@ -1,4 +1,4 @@
-import React from "react";
+/* import React from "react";
 
 const HeroSection = () => {
   return (
@@ -26,3 +26,24 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+*/
+
+
+
+import React from "react";
+import heroImage from "../assets/hero.jpg"; // make sure the image is inside src/assets folder
+
+const HeroSection = () => {
+  return (
+    <section id="hero" className="relative w-full h-[90vh]">
+      <img
+        src={heroImage}
+        alt="Certifa Hero"
+        className="w-full h-full object-cover"
+      />
+    </section>
+  );
+};
+
+export default HeroSection;
+
