@@ -31,7 +31,7 @@ export default HeroSection;
 
 
 import React from "react";
-import heroImage from "../assets/hero2.png"; // adjust path if needed
+import heroImage from "../assets/hero2.jpg"; // adjust path if needed
 
 const HeroSection = () => {
   return (
