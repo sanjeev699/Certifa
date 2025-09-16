@@ -44,7 +44,7 @@ const HeroSection = () => {
         backgroundPosition: "center",
       }}
     >
-      <div className="px-6 max-w-3xl">
+      <div className="relative z-10 flex flex-col items-center justify-center h-full px-6 text-center text-[#1E40AF] -mt-16">
         <h1 className="text-4xl font-extrabold mb-6 leading-snug">
           Global Certifications. Epic Credentials. Amazing Career.
         </h1>
