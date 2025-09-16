@@ -45,10 +45,10 @@ const HeroSection = () => {
       }}
     >
       <div className="px-6 max-w-3xl">
-        <h1 className="text-4xl font-bold mb-4 text-[#1E40AF]">
+        <h1 className="text-5xl font-extrabold mb-6 leading-snug">
           Global Certifications. Epic Credentials. Amazing Career.
         </h1>
-        <p className="text-lg mb-6 text-[#1E40AF]">
+        <p className="text-xl max-w-3xl mb-8">
           Your journey with us starts with Skills Mastery and ends with Certifications valued worldwide.
         </p>
         <a
