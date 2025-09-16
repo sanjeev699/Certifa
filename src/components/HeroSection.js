@@ -31,7 +31,7 @@ export default HeroSection;
 
 
 import React from "react";
-import heroImage from "../assets/hero.jpg"; // Place your hero image inside src/assets/
+import heroImage from "../Assets/hero2.jpg"; // Place your hero image inside src/assets/
 
 const HeroSection = () => {
   return (
