@@ -45,7 +45,7 @@ const HeroSection = () => {
       }}
     >
       <div className="px-6 max-w-3xl">
-        <h1 className="text-5xl font-extrabold mb-6 leading-snug">
+        <h1 className="text-4xl font-extrabold mb-6 leading-snug">
           Global Certifications. Epic Credentials. Amazing Career.
         </h1>
         <p className="text-xl max-w-3xl mb-8">
