@@ -31,7 +31,7 @@ export default HeroSection;
 
 
 import React from "react";
-import heroImage from "../assets/hero.jpg"; // make sure the image is inside src/assets folder
+import heroImage from "../Assets/hero.jpg"; // make sure the image is inside src/assets folder
 
 const HeroSection = () => {
   return (
