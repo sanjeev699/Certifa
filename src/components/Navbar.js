@@ -7,7 +7,7 @@ const Navbar = () => {
   const sections = ["home", "courses", "about", "contact"];
 
   return (
-    <nav className="fixed w-full z-50" style={{ backgroundColor: "#0531f9" }}>
+    <nav className="fixed w-full z-50" style={{ backgroundColor: "#ffffff" }}>
       <div className="max-w-7xl mx-auto px-4 flex justify-between items-center h-16">
         {/* Logo */}
         <div className="flex-shrink-0">
@@ -35,7 +35,7 @@ const Navbar = () => {
         <div className="md:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="text-[#f9cd05] focus:outline-none"
+            className="text-[#0531F9] focus:outline-none"
           >
             {isOpen ? "✖" : "☰"}
           </button>
