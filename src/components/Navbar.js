@@ -35,7 +35,7 @@ const Navbar = () => {
         <div className="md:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="text-yellow-400 focus:outline-none"
+            className="text-[#0531f9] focus:outline-none"
           >
             {isOpen ? "✖" : "☰"}
           </button>
