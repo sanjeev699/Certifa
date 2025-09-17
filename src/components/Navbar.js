@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 flex justify-between items-center h-16">
         {/* Logo */}
         <div className="flex-shrink-0">
-          <img src="/logo2.png" alt="Certifa Logo" className="h-14 w-auto" />
+          <img src="/logo4.jpg" alt="Certifa Logo" className="h-14 w-auto" />
         </div>
 
         {/* Desktop Links */}
