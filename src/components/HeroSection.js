@@ -53,7 +53,7 @@ const HeroSection = () => {
         </p>
         <a
           href="#courses"
-          className="bg-[#ffffff] text-[#0531f9] px-6 py-3 rounded-lg shadow hover:font-bold"
+          className="bg-[#ffffff] text-[#0531f9] px-6 py-3 rounded-lg shadow hover:font-extrabold"
         >
           Explore Courses
         </a>
