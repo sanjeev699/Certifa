@@ -31,7 +31,7 @@ export default HeroSection;
 
 
 import React from "react";
-import heroImage from "../Assets/hero2.jpg"; // adjust path if needed
+import heroImage from "../Assets/hero4.jpg"; // adjust path if needed
 
 const HeroSection = () => {
   return (
@@ -44,7 +44,7 @@ const HeroSection = () => {
         backgroundPosition: "center",
       }}
     >
-      <div className="relative z-10 flex flex-col items-center justify-center h-full px-6 text-center text-[#1E40AF] -mt-12">
+      <div className="relative z-10 flex flex-col items-center justify-center h-full px-6 text-center text-[#0531f9] -mt-12">
         <h1 className="text-4xl font-extrabold mb-6 leading-snug">
           Global Certifications. Epic Credentials. Amazing Career.
         </h1>
@@ -53,7 +53,7 @@ const HeroSection = () => {
         </p>
         <a
           href="#courses"
-          className="bg-[#1E40AF] text-[#fdcb06] px-6 py-3 rounded-lg shadow hover:font-bold"
+          className="bg-[#0531f9] text-[#f9cd05] px-6 py-3 rounded-lg shadow hover:font-bold"
         >
           Explore Courses
         </a>
