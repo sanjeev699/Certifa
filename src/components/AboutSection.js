@@ -1,8 +1,8 @@
 import React from "react";
 
 // Replace these colors with exact shades from your logo if needed
-const blueColor = "#0D47A1"; // navbar/logo blue
-const yellowColor = "#FFD600"; // logo yellow
+const blueColor = "#0531f9"; // navbar/logo blue
+const yellowColor = "#f9cd05"; // logo yellow
 
 const AboutSection = () => {
   return (
