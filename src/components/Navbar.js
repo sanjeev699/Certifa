@@ -7,7 +7,7 @@ const Navbar = () => {
   const sections = ["home", "courses", "about", "contact"];
 
   return (
-    <nav className="fixed w-full z-50" style={{ backgroundColor: "#1E40AF" }}>
+    <nav className="fixed w-full z-50" style={{ backgroundColor: "0531f9" }}>
       <div className="max-w-7xl mx-auto px-4 flex justify-between items-center h-16">
         {/* Logo */}
         <div className="flex-shrink-0">
