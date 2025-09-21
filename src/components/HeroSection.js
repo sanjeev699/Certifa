@@ -59,7 +59,7 @@ const HeroSection = () => {
           Explore Courses
         </a>
 
-      <p className="text-xl max-w-3xl mb-8">
+      <p className="text-xl max-w-3xl mb-14">
         Average 'ends' here. 'Excellence' begins now!
         </p>
             
