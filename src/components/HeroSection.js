@@ -47,10 +47,10 @@ const HeroSection = () => {
     >
       <div className="relative z-10 flex flex-col items-center justify-center h-full px-6 text-center text-[#0531f9] -mt-8">
         <h1 className="text-4xl font-extrabold mb-6 leading-snug">
-          Global Certifications. Epic Credentials. Amazing Career.
+         Want to build a great career? It starts with a globally recognised certification!
         </h1>
         <p className="text-xl max-w-3xl mb-8">
-          Your journey with us starts with Skills Mastery and ends with Certifications valued worldwide.
+          Certifa helps you earn the right certifications and build strong credentials for a great career.
         </p>
         <a
           href="#courses"
