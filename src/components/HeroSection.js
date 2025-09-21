@@ -59,9 +59,9 @@ const HeroSection = () => {
           Explore Courses
         </a>
 
-      <p className="text-xl max-w-3xl mb-14">
-        Average 'ends' here. 'Excellence' begins now!
-        </p>
+      <p className="mt-4 text-lg max-w-2xl text-[#0531f9] font-semibold italic">
+"Average ends here. Excellence begins now."
+</p>
             
       </div>
     </section>
