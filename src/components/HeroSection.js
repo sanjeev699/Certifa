@@ -10,10 +10,11 @@ const HeroSection = () => {
       }}
     >
       <h1 className="text-4xl font-bold mb-4">
-        Right Certifications. Strong Credentials. Great Career.
+       Want to build a great career? It starts with a globally recognised certification!
       </h1>
       <p className="text-lg max-w-2xl mx-auto mb-6">
-        Certifa helps you earn strong credentials through the right certifications to build a great career.
+        Certifa helps you earn the right certifications and build strong credentials for a great career.
+
       </p>
       <a
         href="#courses"
