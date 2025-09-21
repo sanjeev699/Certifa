@@ -47,10 +47,10 @@ const HeroSection = () => {
     >
       <div className="relative z-10 flex flex-col items-center justify-center h-full px-6 text-center text-[#0531f9] -mt-8">
         <h1 className="text-4xl font-extrabold mb-6 leading-snug">
-         Want to build a great career? It starts with a globally recognised certification!
+        Happy with an average job? Or ready to build a Great Career?
         </h1>
         <p className="text-xl max-w-3xl mb-8">
-          Certifa helps you earn the right certifications and build strong credentials for a great career.
+        The first step is earning a globally recognised certification — and Certifa shows you the way.
         </p>
         <a
           href="#courses"
@@ -58,6 +58,11 @@ const HeroSection = () => {
         >
           Explore Courses
         </a>
+
+      <p className="text-xl max-w-3xl mb-8">
+        Average 'ends' here. 'Excellence' begins now!
+        </p>
+            
       </div>
     </section>
   );
